@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Here For You ❤️</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-8">
+      <div class="card slide active card-custom" id="slide1">
+        <div class="card-body text-center">
+          <img src="photo/download (1).jpg" class="img-fluid rounded-4 main-image" alt="Love Image">
+
+          <div class="mt-4 d-grid gap-2 d-sm-flex justify-content-center">
+            <button class="btn btn-pink px-4" onclick="showMessage()">Read ❤️</button>
+          </div>
+
+          <div class="text-box mt-4" id="messageBox">
+            <h3 class="mb-3">To My Precious ❤️</h3>
+            <p>
+              Fear is not love, dependence is not love, jealousy is not love, possessiveness and domination are not love, responsibility and duty are not love, self-pity is not love. Love is not the opposite of hate.
+            </p>
+            <div class="mt-4 d-grid gap-2 d-sm-flex justify-content-center">
+              <button class="btn btn-pink" onclick="playMusic()">Play Music 🎵</button>
+              <button class="btn btn-outline-pink" onclick="nextSlide()">Next ➜</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card slide card-custom mt-4" id="slide2">
+        <div class="card-body text-center">
+          <h2 class="mb-4">us in another universe ❤️</h2>
+          <img src="gif/Love_ _I love the way you are _ I love the way you smile _ And deep down in my heart _ You're driving me so wild!_ ~__.gif" class="img-fluid gif-preview mx-auto" alt="Cute GIF">
+          <h2 class="my-4">Will You Be Mine? ❤️</h2>
+          <div class="d-grid gap-2 d-sm-flex justify-content-center">
+            <button class="btn btn-pink" onclick="yesAnswer()">YES</button>
+            <button class="btn btn-outline-pink" onclick="noAnswer()">NO</button>
+          </div>
+          <div class="answer-box mt-4" id="answerBox"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<audio id="music">
+  <source src="Music/Taylor Swift  Enchanted Taylors Version Lyric Vide.m4a" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
